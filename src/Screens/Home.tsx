@@ -1,6 +1,6 @@
 import { Button, StyleSheet, Text, View,TouchableOpacity } from 'react-native'
 import React from 'react'
-import { ms } from 'react-native-size-matters';
+import { ms, scale } from 'react-native-size-matters';
 import appTheme from '../themes/theme';
 
 const Home = (props :any) => {
@@ -14,6 +14,10 @@ const Home = (props :any) => {
 
   return (
     <View style={styles.container}>
+        <View style={{paddingVertical:scale(30)}}>
+
+            
+        </View>
         
     </View>
   )

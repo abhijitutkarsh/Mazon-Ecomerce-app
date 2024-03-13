@@ -30,6 +30,8 @@ import Home from './src/Screens/Home';
 import Login from './src/Screens/Login';
 import Register from './src/Screens/Register';
 import ProductPage from './src/Screens/ProductPage';
+import { NativeBaseProvider } from 'native-base';
+import appTheme from './src/themes/theme';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -70,6 +72,8 @@ function App(): React.JSX.Element {
   const Stack = createNativeStackNavigator();
 
   return (
+    <NativeBaseProvider theme={appTheme}>
+
    <NavigationContainer>
     <Stack.Navigator >
       <Stack.Screen name="Home" component={Home} options={{headerShown: false}} />
@@ -80,6 +84,7 @@ function App(): React.JSX.Element {
       
     </Stack.Navigator>
    </NavigationContainer>
+    </NativeBaseProvider>
   );
 }
 

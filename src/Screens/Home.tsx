@@ -1,6 +1,7 @@
 import { Button, StyleSheet, Text, View,TouchableOpacity } from 'react-native'
 import React from 'react'
 import { ms } from 'react-native-size-matters';
+import appTheme from '../themes/theme';
 
 const Home = (props :any) => {
 
@@ -12,14 +13,8 @@ const Home = (props :any) => {
     }
 
   return (
-    <View>
-        <Text style={styles.headerContainer}>
-            HOME SCREEN
-        </Text>
-  
-      <TouchableOpacity onPress={navigateToLogin}>
-       <Text> Login</Text>
-      </TouchableOpacity>
+    <View style={styles.container}>
+        
     </View>
   )
 }
@@ -27,40 +22,22 @@ const Home = (props :any) => {
 export default Home
 
 const styles = StyleSheet.create({
-    headerContainer: {
-        justifyContent: "space-between",
-        alignItems: "center",
-        marginBottom:10,
-        fontSize:20
-    },
-    analyticsCardContainer: {
-        width: 122, paddingHorizontal: 10,
-        height:130,
-        marginRight: 9, flexGrow: 1,
-        shadowOffset: { height: ms(4), width: -ms(4) },
-        shadowOpacity: 0.25,
-        shadowRadius: ms(4),
-        elevation: ms(4),
-        borderColor:'black',
-        // paddingLeft:20,
-        // ,backgroundColor: COLORS.primary,
-        borderRadius: 15,
-    },
-    percStyle: {
-        marginTop: 15,
-    },
-    saparator: {
-        backgroundColor: "gray",
-        marginTop: 15
-    },
-    arrowIconStyle:{ 
-        position: "absolute", 
-        top: 10, 
-        right: 10 
-    },
-    onBoarding:{ 
-        marginTop: 20, 
-        paddingBottom: 20 
-    }
+   container: {
+    flex:1,
+    backgroundColor: "white"
+   },
+   header: {
+    backgroundColor: appTheme.colors.primaryColor,
+    alignItems:"center",
+    borderBottomWidth: 12,
+    borderBottomColor: "#ddd"
+   },
+   headerText: {
+    color: "white",
+    fontSize:25,
+    padding:20,
+    margin:20,
+    textAlign: "center"
+   }
   
   })

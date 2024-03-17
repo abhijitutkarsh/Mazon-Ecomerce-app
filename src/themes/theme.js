@@ -8,6 +8,7 @@ const appTheme = extendTheme({
         black1:"#263238",
         backgroundColor:"#FAFBFE",
         primaryColor:'#ab792d',
+        navColor: "#F5F5F5",
         white:"#fff",
         green:"#65C978",
         blue:"#10294E",

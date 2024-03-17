@@ -135,7 +135,6 @@ const styles = StyleSheet.create({
     padding:20,
     marginLeft: 10
     // margin:20,
-    
     // textAlign: "center"
    },
    profileName: {

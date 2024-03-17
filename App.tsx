@@ -32,6 +32,7 @@ import Register from './src/Screens/Register';
 import ProductPage from './src/Screens/ProductPage';
 import { NativeBaseProvider } from 'native-base';
 import appTheme from './src/themes/theme';
+import MyTabs from './src/navigation/tabs';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -75,14 +76,15 @@ function App(): React.JSX.Element {
     <NativeBaseProvider theme={appTheme}>
 
    <NavigationContainer>
-    <Stack.Navigator >
+    <MyTabs/>
+    {/* <Stack.Navigator >
       <Stack.Screen name="Home" component={Home} options={{headerShown: false}} />
       <Stack.Screen name="Login" component={Login} options={{headerShown: false}} />
       <Stack.Screen name="Register" component={Register} options={{headerShown: false}} />
       <Stack.Screen name="Product Page" component={ProductPage} options={{headerShown: false}} />
    
       
-    </Stack.Navigator>
+    </Stack.Navigator> */}
    </NavigationContainer>
     </NativeBaseProvider>
   );

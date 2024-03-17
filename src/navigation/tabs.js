@@ -69,7 +69,6 @@ function MyTabs() {
                     </View>
                 </View>
 
-
             }
             ,headerShown: false
 
